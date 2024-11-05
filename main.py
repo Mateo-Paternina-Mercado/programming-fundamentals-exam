@@ -1,13 +1,11 @@
-voltage1 = int(input("Enter the first voltage: "))
-voltage2 = int(input("Enter the second voltage: "))
-voltage3 = int(input("Enter the third voltage: "))
-voltage4 = int(input("Enter the room voltage: "))
-voltage5 = int(input("Enter the fifth voltage: "))
+import math
 
-promedio =(voltage1 + voltage2 + voltage3 + voltage4 + voltage5)/5
+area = float(input("Enter the side of the equilateral triangle: "))
 
-if promedio > 220:
-    print(f"""{promedio} its voltage is high""")
+resultado = math.sqrt((3/4)*(area ** 2))
 
-elif promedio < 220: 
-    print(f"""{promedio} its voltage is correct""")
+if resultado < 1000:
+    print(f"""The area of the aquilateral triangle is {resultado}""")
+
+elif resultado > 1000:
+    print(f"""INVALID DATA""")       
